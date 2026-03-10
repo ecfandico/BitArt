@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta property="og:site_name" content="Bit-Art">
+<meta property="og:title" content="BitArt">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bit-Art</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7fac71;
+}
+
+header {
+    position: fixed;   
+    top: 0;            
+    left: 0;           
+    right: 0;          
+    width: 100%;       
+    background-color: #005383;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;     
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 15px; 
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    font: bold;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    min-height: 80vh;          
+    padding: 100px 0px 0px 0px; 
+    text-align: center;        
+    width: 100%;
+    background: url('Images/Normal/Clouds.jpg') repeat-x;
+    background-size: auto 100%; 
+    animation: slide-clouds 20s linear infinite; 
+}
+@keyframes slide-clouds {
+    0% { background-position: 0 0; }
+    100% { background-position: -2048px 0; } 
+} 
+#home-1 {
+    display: flex;
+    flex-direction: column;
+}
+.section-2 {
+    background: url('Images/Normal/Features.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 50px 150px 50px 150px;
+    border: 1px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3) ;
+    text-align: center;   
+    display: grid;
+    grid-template-columns: 30% 40% 30%;    
+}
+#text-3 {
+    text-align: center;
+    grid-column: 1 / span 3; /* make the text span all three columns */
+}
+button {
+    color: rgb(233, 233, 233);
+    background-color: #219dbd;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3) ;
+    border-radius: 15px;
+}
+#button-1 {
+    grid-column: 1; 
+    grid-row: 2;
+    margin: 20px;
+}
+#button-2 {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 20px;
+}
+
+footer {
+    background-color: #005383;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+#footer-text-1 {
+    text-align: left;
+    margin: 15px 0px 15px 25px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1 id="title">Bit-Art</h1>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#features" id="nav-2">Features</a>
+    <a href="#tutorials" id="nav-3">Tutorials</a>
+    <a href="#projects" id="nav-4" style="padding: 10px 45px 10px 15px;">Projects</a>
+</nav>
+</header>
+
+<section class="section-1">
+<div id="home-1">
+    <div id="text-1"><h2 style="font-size: 75px; padding: 0px 0px 5px 0px; color: white;">Welcome to Bit-Art</h2></div>
+    <img src="Images/GIFs/Snoopy.gif" alt="Snoopy" style="width: 150px; height: auto; align-items: center; padding: 0px 0px 0px 38%; margin: 0px 0px 40px 0px;">
+    <div id="text-2"><p style="font-size: 25px; padding: 0px 0px 70px 0px; color: white;">A platform for teaching how to create pixel art and design.</p></div>
+</div>
+</section>
+
+<section class="section-2">
+    <div id="text-3"><h2 style="font-size: 50px; color: white;">Features</h2></div>
+    <div id="button-1">
+        <button style="background: url('Images/Normal/Tutorial.jpg'); background-size: cover;">
+            <h2 style="text-align: left;">Tutorials</h2>
+            <p>Check our many tutorials to create your pixel art!</p>
+        </button>
+    </div>
+    <div id="button-2">
+        <button style="background: url('Images/Normal/Project.jpg'); background-size: cover;">
+            <h2 style="text-align: left;">Projects</h2>
+            <p>Start creating your own pixel art!</p>
+        </button>
+    </div>
+    </div>
+</div>
+</section>
+
+<footer>
+<p id="footer-text-1">© 2026 Bit-Art</p>
+</footer>
+
+</body>
+</html>
